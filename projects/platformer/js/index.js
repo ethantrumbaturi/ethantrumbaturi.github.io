@@ -5,7 +5,7 @@ $(document).ready(function () {
     let 
         opspark = window.opspark,
         game = opspark.createGame(create, update),
-        lives = 1;
+        lives = 5;
         
     function create() {
         game.opspark.init();
@@ -62,5 +62,8 @@ $(document).ready(function () {
         game.score.text = 'Score: ' + (parseInt(/\s+(\S*)$/.exec(game.score.text)[1], 10) + collectable.type.points);
         collectable.kill();
     }
+    if(score === 100) {
+            setTimeout(() => game.lives.text = "YOU WIN!!!: Refresh Your Browser to Play Again", 500);
 
+    }
 });

@@ -38,14 +38,13 @@
 
         // platforms:
         
-        createPlatform(500, 100);
-        createPlatform(200, 80, 1, 10);
+        createPlatform(200, 195);
 
-        createPlatform(400, 250);
-        createPlatform(250, 350);
+        createPlatform(400, 310);
+        createPlatform(0, 430);
       
-        createPlatform(170, 460, 0.5);
-        createPlatform(100, 570, 1, 10);
+        createPlatform(270, 530, 0.5);
+        createPlatform(100, 600, 1, 8);
 
         createPlatform(300, 700);
 
